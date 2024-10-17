@@ -14,7 +14,7 @@ public class Main {
 
         for (int i = 0; i < examination; i++) {
             rating= scanner.nextInt();
-            if (rating==3){
+            if (rating<=3){
                 return "None";
             }
             allRating+=rating;
