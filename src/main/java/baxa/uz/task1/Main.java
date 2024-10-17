@@ -14,6 +14,9 @@ public class Main {
 
         for (int i = 0; i < examination; i++) {
             rating= scanner.nextInt();
+            if (rating==3){
+                return "None";
+            }
             allRating+=rating;
         }
 
@@ -26,9 +29,6 @@ public class Main {
         }
         else if (overAll>3 && overAll<4.5){
             result = "Common";
-        }
-        else if (overAll<=3.0){
-            result = "None";
         }
         return result;
     }
